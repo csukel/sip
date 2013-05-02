@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="494dp"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/skbLowQual"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtQualRate"
+            android:layout_below="@+id/txtQualRate" />
+
+        <SeekBar
+            android:id="@+id/skbLowUnemployment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_centerHorizontal="true" />
+
+        <SeekBar
+            android:id="@+id/skbMaxUnemployment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/skbLowUnemployment"
+            android:layout_below="@+id/txtLowUnemployment" />
+
+        <SeekBar
+            android:id="@+id/skbMaxQual"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMaxUnemployment"
+            android:layout_below="@+id/txtLowQual" />
+
+        <TextView
+            android:id="@+id/txtLowUnemployment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/skbLowUnemployment"
+            android:layout_below="@+id/skbLowUnemployment"
+            android:text="Lower bound" />
+
+        <TextView
+            android:id="@+id/txtMaxUnemployment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/skbMaxUnemployment"
+            android:layout_below="@+id/skbMaxUnemployment"
+            android:text="Upper bound" />
+
+        <TextView
+            android:id="@+id/txtLowQual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/skbLowQual"
+            android:layout_below="@+id/skbLowQual"
+            android:text="Lower bound" />
+
+        <TextView
+            android:id="@+id/txtMaxQual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/skbMaxQual"
+            android:layout_below="@+id/skbMaxQual"
+            android:text="Upper bound" />
+
+        <TextView
+            android:id="@+id/txtTest"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/sprQualCat"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/txtTitle"
+            android:layout_marginTop="20dp"
+            android:text="Select Qualification Category"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMaxQual"
+            android:layout_alignRight="@+id/skbMaxQual"
+            android:layout_below="@+id/txtMaxQual"
+            android:layout_marginTop="14dp"
+            android:text="Show Results on Map" />
+
+        <TextView
+            android:id="@+id/txtQualRate"
+            android:layout_width="170dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/txtMaxUnemployment"
+            android:layout_below="@+id/txtMaxUnemployment"
+            android:layout_marginTop="26dp"
+            android:text="Qualification Rate"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/sprQualCat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtTitle"
+            android:layout_below="@+id/txtTest"
+            android:entries="@array/Qualifications_Categories"
+            android:prompt="@string/QualCategory" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="190dp"
+            android:layout_height="25dp"
+            android:layout_alignLeft="@+id/skbLowUnemployment"
+            android:layout_below="@+id/sprQualCat"
+            android:layout_marginTop="17dp"
+            android:text="Unemployment Rate"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

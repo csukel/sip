@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="895dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/boroughName"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imgBtnBorough"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/boroughName"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtgcse"
+            android:layout_below="@+id/txtScholarMaxUnemployment"
+            android:layout_marginTop="27dp"
+            android:text="Degree"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prbUnemployment"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/prbUnemployment"
+            android:layout_below="@+id/imgBtnBorough"
+            android:layout_marginTop="38dp"
+            android:text="Unemployment rate"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txtMaxUnemployment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/prbUnemployment"
+            android:layout_below="@+id/prbUnemployment"
+            android:layout_marginTop="21dp"
+            android:text="Crime rate"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prbCrime"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMaxUnemployment"
+            android:layout_below="@+id/txtMaxUnemployment" />
+
+        <TextView
+            android:id="@+id/txtgcse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/prbCrime"
+            android:layout_below="@+id/prbCrime"
+            android:layout_marginTop="21dp"
+            android:text="GCSE Results"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prbGcseResults"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtgcse"
+            android:layout_below="@+id/txtgcse" />
+
+        <ProgressBar
+            android:id="@+id/prbDegreeQual"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtDegree"
+            android:layout_below="@+id/txtDegree" />
+
+        <TextView
+            android:id="@+id/txtHigherEdu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/prbDegreeQual"
+            android:layout_below="@+id/prbDegreeQual"
+            android:layout_marginTop="21dp"
+            android:text="Higher Education"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prbHigherEdu"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtHigherEdu"
+            android:layout_below="@+id/txtHigherEdu" />
+
+        <TextView
+            android:id="@+id/txtMaxQual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/prbHigherEdu"
+            android:layout_below="@+id/prbHigherEdu"
+            android:layout_marginTop="21dp"
+            android:text="GCE A Level"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prbGceAQual"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtGcseQual"
+            android:layout_below="@+id/txtMaxQual" />
+
+        <TextView
+            android:id="@+id/txtGcseQual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMaxQual"
+            android:layout_below="@+id/prbGceAQual"
+            android:layout_marginTop="21dp"
+            android:text="GCSE"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prbGcseQual"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtGcseQual"
+            android:layout_below="@+id/txtGcseQual" />
+
+        <TextView
+            android:id="@+id/txtOtherQual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/prbGcseQual"
+            android:layout_below="@+id/prbGcseQual"
+            android:layout_marginTop="21dp"
+            android:text="Other Qualifications"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prbOtherQual"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtOtherQual"
+            android:layout_below="@+id/txtOtherQual" />
+
+        <TextView
+            android:id="@+id/txtNoQual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/prbOtherQual"
+            android:layout_below="@+id/prbOtherQual"
+            android:layout_marginTop="21dp"
+            android:text="No Qualifications"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/prbNoQual"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtNoQual"
+            android:layout_below="@+id/txtNoQual" />
+
+        <TextView
+            android:id="@+id/txtScholarMaxUnemployment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imgBtnBorough"
+            android:layout_below="@+id/prbGcseResults"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Qualifications of Working Age Population"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="620dp"
+       android:orientation="vertical" >
+
+       <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="24dp"
+           android:text="@string/Boroughs"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+
+       <SeekBar
+           android:id="@+id/skbSchoolLowUnemployment"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView2"
+           android:layout_centerHorizontal="true" />
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignRight="@+id/textView1"
+           android:layout_below="@+id/textView1"
+           android:layout_marginTop="18dp"
+           android:text="Unemployment Rate"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/txtSchoolLowUnemployment"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/skbSchoolLowUnemployment"
+           android:layout_below="@+id/skbSchoolLowUnemployment"
+           android:text="Lower Bound"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <SeekBar
+           android:id="@+id/skbSchoolMaxUnemployment"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/txtSchoolLowUnemployment"
+           android:layout_below="@+id/txtSchoolLowUnemployment" />
+
+       <TextView
+           android:id="@+id/txtSchoolMaxUnemployment"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/skbSchoolMaxUnemployment"
+           android:layout_below="@+id/skbSchoolMaxUnemployment"
+           android:text="Upper Bound"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <TextView
+           android:id="@+id/TextView01"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/txtSchoolMaxUnemployment"
+           android:layout_below="@+id/txtSchoolMaxUnemployment"
+           android:layout_marginTop="22dp"
+           android:text="Crime Rate"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <SeekBar
+           android:id="@+id/skbSchoolLowCrime"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/TextView01"
+           android:layout_below="@+id/TextView01" />
+
+       <TextView
+           android:id="@+id/txtSchoolLowCrime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/skbSchoolLowCrime"
+           android:layout_below="@+id/skbSchoolLowCrime"
+           android:text="Lower Bound"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <SeekBar
+           android:id="@+id/skbSchoolMaxCrime"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/txtSchoolLowCrime"
+           android:layout_below="@+id/txtSchoolLowCrime" />
+
+       <TextView
+           android:id="@+id/txtSchoolMaxCrime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/skbSchoolMaxCrime"
+           android:layout_below="@+id/skbSchoolMaxCrime"
+           android:text="Upper Bound"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <TextView
+           android:id="@+id/TextView04"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/txtSchoolMaxCrime"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="21dp"
+           android:text= "@string/Schools"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+
+       <TextView
+           android:id="@+id/TextView05"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textView2"
+           android:layout_below="@+id/TextView04"
+           android:layout_marginTop="21dp"
+           android:text="GCSE Results of schools"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <SeekBar
+           android:id="@+id/skbLowGcse"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/txtSchoolMaxCrime"
+           android:layout_below="@+id/TextView05" />
+
+       <TextView
+           android:id="@+id/txtLowGcse"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/skbLowGcse"
+           android:layout_below="@+id/skbLowGcse"
+           android:text="Lower Bound"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <SeekBar
+           android:id="@+id/skbMaxGcse"
+           android:layout_width="240dp"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/txtLowGcse"
+           android:layout_below="@+id/txtLowGcse" />
+
+       <TextView
+           android:id="@+id/txtMaxGcse"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/skbMaxGcse"
+           android:layout_below="@+id/skbMaxGcse"
+           android:text="Upper Bound"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <Button
+           android:id="@+id/btnSchoolResults"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/TextView05"
+           android:layout_alignRight="@+id/skbMaxGcse"
+           android:layout_below="@+id/txtMaxGcse"
+           android:layout_marginTop="18dp"
+           android:text="List Results" />
+        
+    </RelativeLayout>
+    
+</ScrollView>    

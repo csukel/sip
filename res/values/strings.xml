@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SIP</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="MapName">SIP: London Boroughs Map</string>
+	<string name="Borough">SIP: Borough Profile</string>
+	<string name="UnemploymentMain">SIP: Unemployment Scheme</string>
+	<string name="Map">SIP: Map Results</string>
+	<string name="ScholarBorough">SIP: Scholarships by Borough</string>
+	<string name="listResult">SIP: List Results</string>
+	<string name="ScholarSchool">SIP: Scholarships by Schools</string>
+	<string name="Schools"><u>Schools</u></string>
+	<string name="Boroughs"><u>Boroughs</u></string>
+	
+	
+	<string name="QualCategory">Choose Qualification Category</string>
+	<string-array name="Qualifications_Categories">
+        <item>Degree</item>
+        <item>Higher Education</item>
+        <item>GCE A Level</item>
+        <item>GCSE Level</item>
+        <item>Other Qualifications</item>
+        <item>No Qualifications</item>
+    </string-array>
+    
+</resources>
